@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function addMessage() {
+        let parent = document.querySelector("#container");
+
+        let newCode = Math.floor(Math.random() * 80);
+
+        let newElement = `<h1 style="background:tomato; padding:16px; margin:0; margin-bottom:1px">Hello World &#1285${newCode};</h1>`;
+        parent.innerHTML += newElement;
+
+        parent.scrollTop = parent.scrollHeight;
+      }
+    </script>
+  </head>
+  <body style="margin: 0">
+    <div
+      style="
+        height: calc(100vh - 100px);
+        overflow-y: scroll;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      "
+    >
+      <div id="container" style="overflow-y: auto">
+        <h1>Hello World</h1>
+      </div>
+    </div>
+
+    <div style="height: 100px">
+      <input
+        type="button"
+        value="Send Message"
+        style="width: 100%; height: 100%"
+        onclick="addMessage()"
+      />
+    </div>
+  </body>
+</html>
