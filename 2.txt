@@ -1,0 +1,21 @@
+// TAGS
+<h1></h1>
+<img />
+
+<img src="" >
+
+Commonly Used Attribute' which can be applied to all the TAGS
+Attributes are optional.
+
+1. id - Ideally this should be Unique, Identity (AADHAR)
+2. name - Name can be duplicate!
+3. style
+4. class
+
+5. specific
+img:src             SRC is specific to image
+input:type          TYPE is specific to input
+
+
+
+
