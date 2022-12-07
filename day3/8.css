@@ -1,5 +1,21 @@
-div,
-p {
+/** THIS APPPLIES TO ALL THE DIV */
+div {
+  margin-bottom: 8px;
+  padding: 8px;
+
   color: red;
   background: yellow;
+}
+
+/* THIS IS ID SELECTOR DEMO :: USING SPECIAL CHAR # */
+/* IDEALLY THIS SHOULD APPLIES TO ONLY ONE */
+#id1 {
+  color: white;
+  background: green;
+}
+
+/* CLASS SELECTOR :: USING SPL CHAR DOT . */
+.class1 {
+  color: white;
+  background: purple;
 }
