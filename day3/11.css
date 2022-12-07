@@ -1,0 +1,29 @@
+h1 {
+  margin: 0;
+  color: white;
+  padding: 24px;
+  /* background: linear-gradient(to right, lightseagreen, green); */
+  background: linear-gradient(to right, pink, purple);
+  margin-bottom: 1px;
+}
+
+.fixify {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.beautify {
+  color: white;
+  background: linear-gradient(to right, lightgreen, lightseagreen);
+  background: linear-gradient(to right, pink, purple);
+  margin-bottom: 2px;
+
+  height: 150px;
+  font-size: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
