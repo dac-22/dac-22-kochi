@@ -1,7 +1,13 @@
+h1 {
+  color: red;
+}
+h1 {
+  color: green;
+}
+
 .colorify {
   color: white;
   background: purple;
-
   padding: 12px;
 }
 
