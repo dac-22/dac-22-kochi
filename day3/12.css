@@ -1,0 +1,35 @@
+h1 {
+  margin: 0;
+  color: white;
+  padding: 24px;
+  /* background: linear-gradient(to right, lightseagreen, green); */
+  background: linear-gradient(to right, pink, purple);
+  margin-bottom: 1px;
+}
+
+.fixify {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.beautify {
+  color: white;
+  background: linear-gradient(to right, white, grey);
+
+  margin-bottom: 2px;
+
+  height: 250px;
+  font-size: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagify {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
