@@ -1,9 +1,12 @@
 div {
   color: white;
-  background: purple;
+  /*background: linear-gradient(to right, pink, hotpink);*/
+  background: linear-gradient(to right, lightgreen, lightseagreen);
   height: 200px;
-  font-size: 32px;
-  font-family: cursive;
+
+  font-size: 24px;
+  font-family: Diplomata SC;
+
   margin-bottom: 1px;
 
   display: flex;
