@@ -1,0 +1,40 @@
+h1 {
+  margin: 0;
+
+  color: white;
+  background: purple;
+
+  padding: 16px;
+  margin-bottom: 2px;
+}
+
+.textify {
+  width: 95%;
+  height: 40px;
+
+  font-size: 21px;
+  font-family: cursive;
+  font-weight: bold;
+
+  margin-bottom: 2px;
+
+  color: purple;
+
+  border: 5px solid rgb(128, 0, 128, 0.75);
+  border-radius: 16px;
+
+  padding: 8px;
+}
+
+.btnify {
+  width: 99%;
+  height: 60px;
+
+  background: rgb(128, 0, 128, 0.85);
+  color: white;
+
+  font-size: 24px;
+  font-family: cursive;
+
+  border-radius: 16px;
+}
