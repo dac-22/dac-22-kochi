@@ -1,0 +1,11 @@
+.colorify {
+  color: white;
+  background: purple;
+
+  padding: 12px;
+}
+
+.fontify {
+  font-size: 24px;
+  font-family: cursive;
+}

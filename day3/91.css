@@ -1,0 +1,46 @@
+h1 {
+  color: white;
+  background: purple;
+}
+
+p,
+div {
+  color: white;
+  background: green;
+
+  margin-bottom: 4px;
+  padding: 8px;
+}
+
+#id1 {
+}
+
+#id2,
+#id3,
+#id4 {
+}
+
+.class1 {
+}
+
+.class2,
+.class3 {
+}
+
+/** More Interesting */
+div,
+p,
+#id1 {
+}
+
+div,
+#id1,
+.class1 {
+}
+
+/** EVEN MORE INTERESTING */
+div#id1 {
+}
+
+div.class1 {
+}
