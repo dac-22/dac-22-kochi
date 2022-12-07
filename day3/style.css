@@ -1,0 +1,12 @@
+div {
+  color: white;
+  background: purple;
+  height: 200px;
+  font-size: 32px;
+  font-family: cursive;
+  margin-bottom: 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
