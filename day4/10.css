@@ -1,0 +1,42 @@
+.message-cotainer {
+  background: transparent;
+  height: 92vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.messages {
+  font-size: 21px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 128, 0, 0.1),
+    rgba(0, 128, 0, 1)
+  );
+  color: white;
+  padding: 8px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+}
+
+.bottom-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.parent2 {
+  display: flex;
+  align-items: center;
+}
+
+.btnify {
+  height: 44px;
+  font-size: large;
+}
+
+.inputify {
+  height: 40px;
+}
