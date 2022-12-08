@@ -1,0 +1,20 @@
+.parent {
+  background: transparent;
+  display: flex;
+
+  justify-content: center;
+}
+
+.parent1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parent2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parent21 {
+  display: flex;
+}
