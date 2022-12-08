@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        background: red;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div>Hello World</div>
+    </div>
+
+    <div style="background: purple; display: flex; justify-content: end">
+      <div style="background: green">CHILD 1</div>
+      <div style="background: gold">CHILD 2</div>
+    </div>
+
+    <br />
+
+    <div
+      style="
+        background: chocolate;
+        display: flex;
+        justify-content: space-between;
+      "
+    >
+      <div style="background: green">CHILD 1</div>
+      <div style="background: gold">CHILD 2</div>
+    </div>
+
+    <br />
+    <div style="background: chocolate; display: flex">
+      <div style="background: green; flex: 1">CHILD 1</div>
+      <div style="background: gold; flex: 1">CHILD 2</div>
+    </div>
+
+    <br />
+    <div style="background: chocolate; display: flex">
+      <div style="background: green; flex: 1">CHILD 1</div>
+      <div style="background: gold; flex: 2">CHILD 2</div>
+      <div style="background: silver; flex: 1">CHILD 3</div>
+    </div>
+  </body>
+</html>
