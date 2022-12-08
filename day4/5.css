@@ -1,0 +1,14 @@
+.parent {
+  background: transparent;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child1 {
+  background: transparent;
+  font-size: 48px;
+  font-family: monospace;
+}

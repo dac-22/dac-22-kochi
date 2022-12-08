@@ -1,0 +1,26 @@
+.parent {
+  background: transparent;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.child1 {
+  font-size: 60px;
+  font-family: monospace;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.inputify {
+  background: transparent;
+  width: 60vw;
+  height: 40px;
+  border-radius: 24px;
+
+  font-size: large;
+  padding-left: 8px;
+}
