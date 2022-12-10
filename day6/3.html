@@ -10,7 +10,13 @@
   </head>
   <body>
     <input type="text" name="" id="text-id1" onkeyup="checkEnter(event)" />
-    <input type="button" value="Add New Message" onclick="addNewMessage()" />
+
+    <input
+      id="btn-id1"
+      type="button"
+      value="Add New Message"
+      onclick="addNewMessage(this)"
+    />
 
     <!-- THIS IS MESSAGE CONTAWINR -->
     <div id="message-container"></div>
