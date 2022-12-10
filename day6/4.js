@@ -5,7 +5,16 @@ function addNewMessage(p1) {
   let divRef = p1.nextElementSibling;
   let textRef = p1.previousElementSibling;
 
-  let newElement = `<h1>${textRef.value}</h1>`;
+  let newElement = `<div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <h1>${textRef.value}</h1>
+                      <input type="button" value="DEL" onclick="deleteMessage(this)" />
+                    </div>`;
   divRef.innerHTML = newElement + divRef.innerHTML;
 
   // make empty
@@ -18,4 +27,8 @@ function checkEnter(event) {
     let btnRef = document.querySelector("#btn-id1");
     addNewMessage(btnRef);
   }
+}
+
+function deleteMessage(p1) {
+  p1.parentElement.remove();
 }
