@@ -1,3 +1,24 @@
+let messageList = ["hi", "how are u", "where are u?", "mumabi"];
+
+// THIS IS LIKER UR CONSTRUCTOR
+window.addEventListener("load", () => {
+  let divRef = document.querySelector("#parent");
+  for (let item of messageList) {
+    let previousMessage = `<div
+                            style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            "
+                            >
+                            <h1>${item}</h1>
+                            <input type="button" value="DEL" onclick="deleteMessage(this)" />
+                            </div>`;
+
+    divRef.innerHTML = previousMessage + divRef.innerHTML;
+  }
+});
+
 function addMessage(p1) {
   let divRef = document.querySelector("#parent");
   let textRef = p1.previousElementSibling;
