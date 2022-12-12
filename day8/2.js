@@ -29,8 +29,11 @@ function addMessage(p1) {
 
   // if the input field is invalid; returns from here.
   if (!textRef.checkValidity()) {
-    alert("Empty Messages are not allowed");
+    // alert("Empty Messages are not allowed");
+    textRef.style.border = "1px solid red";
     return;
+  } else {
+    textRef.style.border = "1px solid black";
   }
 
   let newMessage = `<div
