@@ -4,13 +4,7 @@ let messageList = [];
 window.addEventListener("load", () => {
   // READ THE MESSAGES :: FROM LOCAL STORAGE
   let strList = localStorage.getItem("messageList");
-  // messageList = JSON.parse(strList) || [];
-
-  if (strList == null) {
-    messageList = [];
-  } else {
-    messageList = JSON.parse(strList);
-  }
+  messageList = JSON.parse(strList) || [];
 
   let divRef = document.querySelector("#parent");
   for (let item of messageList) {
@@ -32,6 +26,11 @@ window.addEventListener("load", () => {
 function addMessage(p1) {
   let divRef = document.querySelector("#parent");
   let textRef = p1.previousElementSibling;
+
+  // if the input field is invalid; returns from here.
+  if (!textRef.checkValidity()) {
+    return;
+  }
 
   let newMessage = `<div
                     style="

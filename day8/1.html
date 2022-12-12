@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="1.js"></script>
+  </head>
+  <body>
+    <input id="textRef" type="text" onkeyup="checkEnterCode(event)" required />
+    <input
+      id="btn1"
+      type="button"
+      value="Add Message"
+      onclick="addMessage(this)"
+    />
+
+    <div id="parent">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <h1>Hello World</h1>
+        <input type="button" value="DEL" onclick="deleteMessage(this)" />
+      </div>
+    </div>
+  </body>
+</html>
