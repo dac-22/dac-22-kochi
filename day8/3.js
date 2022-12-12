@@ -67,3 +67,29 @@ function checkEnterCode(event) {
 function deleteMessage(p1) {
   p1.parentElement.remove();
 }
+
+function searchMessages() {
+  let strList = localStorage.getItem("messageList");
+  let inputList = JSON.parse(strList);
+
+  let searchRef = document.querySelector("#sid");
+  let outputList = inputList.filter((item) => item.startsWith(searchRef.value));
+
+  // Search Result Rendering.
+  let divRef = document.querySelector("#parent");
+  divRef.innerHTML = "";
+  for (let item of outputList) {
+    let searchMessage = `<div
+          style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          "
+          >
+          <h1>${item}</h1>
+          <input type="button" value="DEL" onclick="deleteMessage(this)" />
+          </div>`;
+
+    divRef.innerHTML = searchMessage + divRef.innerHTML;
+  }
+}

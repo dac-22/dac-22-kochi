@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <script src="2.js"></script>
+    <script src="3.js"></script>
   </head>
   <body style="">
     <div style="display: flex; justify-content: space-between">
@@ -28,7 +28,12 @@
       </div>
 
       <div>
-        <input type="text" placeholder="search" />
+        <input
+          id="sid"
+          type="text"
+          placeholder="search"
+          onkeyup="searchMessages()"
+        />
         <input type="button" value="Search" />
       </div>
     </div>
