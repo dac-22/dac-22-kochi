@@ -4,7 +4,10 @@ let messageList = [];
 window.addEventListener("load", () => {
   // READ THE MESSAGES :: FROM LOCAL STORAGE
   let strList = localStorage.getItem("messageList");
-  messageList = JSON.parse(strList) || [];
+  // messageList = JSON.parse(strList) || [];
+  if (strList == null) {
+    messageList = [];
+  }
 
   let divRef = document.querySelector("#parent");
   for (let item of messageList) {
