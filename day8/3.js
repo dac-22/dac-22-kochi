@@ -73,6 +73,7 @@ function searchMessages() {
   let inputList = JSON.parse(strList);
 
   let searchRef = document.querySelector("#sid");
+  // let outputList = inputList.filter((item) => item.startsWith("c"));
   let outputList = inputList.filter((item) => item.startsWith(searchRef.value));
 
   // Search Result Rendering.
