@@ -1,3 +1,33 @@
+let messageList = [];
+
+window.addEventListener("load", () => {
+  let strList = localStorage.getItem("messageList");
+  if (strList != null) {
+    messageList = JSON.parse(strList);
+  }
+
+  let parentRef = document.querySelector("#container");
+  for (let item of messageList) {
+    let message = item.message;
+    let messageTime = new Date(item.messageTime);
+    let hour = messageTime.getHours();
+    let minutes = messageTime.getMinutes();
+
+    let newMessage = `<div class="row mb-1 justify-content-start">
+            <div class="col-6">
+                <div
+                class="d-flex badge text-bg-secondary justify-content-between align-items-center"
+                >
+                <div>${message}</div>
+                <div style="font-size: 10px">${hour}:${minutes}</div>
+                </div>
+            </div>
+        </div>`;
+
+    parentRef.innerHTML = newMessage + parentRef.innerHTML;
+  }
+});
+
 function addMessage(reply) {
   let parentRef = document.querySelector("#container");
 
@@ -11,6 +41,7 @@ function addMessage(reply) {
     textRef.classList.remove("border-danger");
   }
 
+  let message = textRef.value;
   let messageTime = new Date();
   let hour = messageTime.getHours();
   let minutes = messageTime.getMinutes();
@@ -32,8 +63,12 @@ function addMessage(reply) {
                     </div>`;
 
   parentRef.innerHTML = newMessage + parentRef.innerHTML;
-
   textRef.value = "";
+
+  // Storing in Localstorage
+  let messageRef = { message: message, messageTime: messageTime };
+  messageList.push(messageRef);
+  localStorage.setItem("messageList", JSON.stringify(messageList));
 }
 
 function checkEnterEvent(event) {
