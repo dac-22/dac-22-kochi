@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
     let newMessage = `<div class="row mb-1 ${dclass}">
             <div class="col-6">
                 <div
-                class="d-flex badge text-bg-success justify-content-between align-items-center"
+                class="d-flex badge text-bg-danger opacity-75 justify-content-between align-items-center"
                 >
                 <div>${message}</div>
                 <div style="font-size: 10px">${hour}:${minutes}</div>
@@ -60,7 +60,7 @@ function addMessage(reply) {
   let newMessage = `<div class="row mb-1 ${dclass}">
                         <div class="col-6">
                             <div
-                            class="d-flex badge text-bg-success justify-content-between align-items-center"
+                            class="d-flex badge text-bg-danger opacity-75 justify-content-between align-items-center"
                             >
                             <div>${textRef.value}</div>
                             <div style="font-size: 10px">${hour}:${minutes}</div>
