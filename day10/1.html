@@ -15,7 +15,7 @@
     <script src="1.js"></script>
   </head>
   <body>
-    <nav class="navbar bg-dark navbar-dark">
+    <nav class="navbar bg-success navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Messaging App</a>
       </div>
@@ -33,43 +33,19 @@
         onkeyup="checkEnterEvent(event)"
       />
       <input
-        class="btn btn-sm btn-secondary me-1"
+        class="btn btn-sm btn-success me-1"
         type="button"
         value="Submit"
         onclick="addMessage(false)"
       />
       <input
-        class="btn btn-sm btn-secondary"
+        class="btn btn-sm btn-success"
         type="button"
         value="Reply"
         onclick="addMessage(true)"
       />
     </div>
 
-    <div id="container">
-      <!-- Reference Block for Add Message -->
-      <div class="row mb-1 justify-content-start">
-        <div class="col-6">
-          <div
-            class="d-flex badge text-bg-secondary justify-content-between align-items-center"
-          >
-            <div>Hi How are you,</div>
-            <div style="font-size: 10px">14:12</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Reference Block for Reply Message -->
-      <div class="row mb-1 justify-content-end">
-        <div class="col-6">
-          <div
-            class="d-flex badge text-bg-secondary justify-content-between align-items-center"
-          >
-            <div>Hi How are you,</div>
-            <div style="font-size: 10px">14:12</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="container"></div>
   </body>
 </html>
