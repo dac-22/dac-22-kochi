@@ -2,6 +2,15 @@ function addMessage(reply) {
   let parentRef = document.querySelector("#container");
 
   let textRef = document.querySelector("#textId1");
+  // validation
+  if (!textRef.checkValidity()) {
+    // alert("Valdiation error");
+    textRef.classList.add("border-danger");
+    return;
+  } else {
+    textRef.classList.remove("border-danger");
+  }
+
   let messageTime = new Date();
   let hour = messageTime.getHours();
   let minutes = messageTime.getMinutes();
@@ -25,4 +34,10 @@ function addMessage(reply) {
   parentRef.innerHTML = newMessage + parentRef.innerHTML;
 
   textRef.value = "";
+}
+
+function checkEnterEvent(event) {
+  if (event.keyCode == "13") {
+    addMessage(false);
+  }
 }

@@ -20,8 +20,11 @@
         type="text"
         name=""
         id="textId1"
-        class="form-control"
+        class="form-control border"
         placeholder="Post your messsage"
+        minlength="3"
+        required
+        onkeyup="checkEnterEvent(event)"
       />
       <input
         class="btn btn-sm btn-secondary"
