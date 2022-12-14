@@ -9,11 +9,17 @@ window.addEventListener("load", () => {
   let parentRef = document.querySelector("#container");
   for (let item of messageList) {
     let message = item.message;
+
     let messageTime = new Date(item.messageTime);
     let hour = messageTime.getHours();
     let minutes = messageTime.getMinutes();
 
-    let newMessage = `<div class="row mb-1 justify-content-start">
+    let dclass = "justify-content-start";
+    if (item.reply) {
+      dclass = "justify-content-end";
+    }
+
+    let newMessage = `<div class="row mb-1 ${dclass}">
             <div class="col-6">
                 <div
                 class="d-flex badge text-bg-secondary justify-content-between align-items-center"
@@ -66,7 +72,7 @@ function addMessage(reply) {
   textRef.value = "";
 
   // Storing in Localstorage
-  let messageRef = { message: message, messageTime: messageTime };
+  let messageRef = { message: message, messageTime: messageTime, reply: reply };
   messageList.push(messageRef);
   localStorage.setItem("messageList", JSON.stringify(messageList));
 }

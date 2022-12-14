@@ -15,19 +15,25 @@
     <script src="1.js"></script>
   </head>
   <body>
+    <nav class="navbar bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Messaging App</a>
+      </div>
+    </nav>
+
     <div class="d-flex mt-2 mb-2">
       <input
         type="text"
         name=""
         id="textId1"
-        class="form-control border"
+        class="form-control border me-1"
         placeholder="Post your messsage"
         minlength="3"
         required
         onkeyup="checkEnterEvent(event)"
       />
       <input
-        class="btn btn-sm btn-secondary"
+        class="btn btn-sm btn-secondary me-1"
         type="button"
         value="Submit"
         onclick="addMessage(false)"
